@@ -1,15 +1,20 @@
 package com.core.java.v1ch03;
 
 /**
+ * 这种注释 , 可以用来自动生成文档
+ *
  * @Author chenpantao
  * @Date 2020-04-06 10:53
  * @Version 1.0
  */
-/**
+/*多行注释
+ *
  * public : access modifier 访问修饰符 , 控制程序的其它部分对这段代码的访问级别 .
  * class : 关键字 , 表明 java 程序中全部内容包含在类中
  * 类名规则 : 以字母开头 , 不可以使用保留字 , 建议使用驼峰结构
  */
+
+// 当行注释
 public class Demo1SimpleClassStructure {
 
     /**
@@ -28,4 +33,5 @@ public class Demo1SimpleClassStructure {
         System.out.println("First Sample");
 
     }
+
 }
