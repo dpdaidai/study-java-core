@@ -14,5 +14,11 @@
 | Java FX                   | -         | 用于图形化用户界面的一个替代工具包 | 
 | Open JDK                  | -         | Java SE 的一个免费开源实现, 不包含浏览器继承或Java FX |
 | Software Development Kit  | SDK       | 一个过时的术语, 用于描述1998-2006年之间的JDK |
-| Update                    | u         | Oracle 的术语, 表示bug修正版本 | 
+| Update                    | u         | Oracle 的术语, 表示bug修正版本, 例如Java SE 8u31 | 
 | NetBeans                  | -         | Oracle的集成开发环境 | 
+
+2.  运行Java程序 <br>
+    1.  javac <br>
+    Java 的编译器 , 将 .java 文件编译成 .class 字节码文件
+    2.  java <br>
+    启动java虚拟机运行 .class 文件中的字节码
