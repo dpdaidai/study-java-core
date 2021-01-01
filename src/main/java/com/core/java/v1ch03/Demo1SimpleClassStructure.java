@@ -6,13 +6,14 @@ package com.core.java.v1ch03;
  * @Version 1.0
  */
 /**
- * access modifier 访问修饰符
- * 关键字 class 表明 java 程序中全部内容包含在类中
+ * public : access modifier 访问修饰符 , 控制程序的其它部分对这段代码的访问级别 .
+ * class : 关键字 , 表明 java 程序中全部内容包含在类中
  * 类名规则 : 以字母开头 , 不可以使用保留字 , 建议使用驼峰结构
  */
-public class SimpleClassStructure {
+public class Demo1SimpleClassStructure {
 
     /**
+     * 使用 {} 划分程序的各个部分
      * 运行已编译的程序时 , java 虚拟机从指定类中的 main 方法开始执行
      * 该方法没有返回值 , 正常退出则退出代码为0 .
      * 如果希望在终止程序时返回其它代码 , 调用 System.exit 方法.
