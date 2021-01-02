@@ -3,7 +3,7 @@ package com.core.java.print;
 import java.util.Stack;
 
 /**
- * 栈排序
+ * 单栈排序
  *
  * @Author chenpantao
  * @Date 2020-05-29 12:28

@@ -1,4 +1,4 @@
-package com.core.java.print;
+package com.core.java.v1ch03;
 
 import java.util.Date;
 

@@ -15,7 +15,7 @@ package com.core.java.v1ch03;
  */
 
 // 当行注释
-public class Demo1SimpleClassStructure {
+public class Note01SimpleClassStructure {
 
     /**
      * 使用 {} 划分程序的各个部分

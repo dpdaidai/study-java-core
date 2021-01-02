@@ -1,4 +1,4 @@
-package com.core.java.number;
+package com.core.java.v1ch03;
 
 
 public class CharTest {
