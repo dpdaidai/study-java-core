@@ -1,6 +1,6 @@
 package com.core.java.v1ch03;
 
-public class Note2NumberTest {
+public class Note02NumberTest {
 
     public static void main(String[] args) {
         //二进制

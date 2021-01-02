@@ -1,6 +1,6 @@
 package com.core.java.v1ch03;
 
-public class Note2ETest {
+public class Note02ETest {
 
     public static void main(String[] args) {
 

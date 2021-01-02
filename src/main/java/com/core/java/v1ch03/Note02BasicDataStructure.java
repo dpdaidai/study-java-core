@@ -128,12 +128,48 @@ public class Note02BasicDataStructure {
     }
 
     // 字符类型char
-    public static void charDemo(){
+    public static void charDemo() {
         /**
-         *
+         * 1 char类型原本用于表示单个字符, 如今有些Unicode字符则需要两个char值.
+         * 2 char类型的字面量要用 单引号 括起来.
+         * 3 char类型可以表示为十六进制值, 其范围从\u0000 到 \uffff . 例如 \u2213 表示符号 ™
+         * 4 特殊转义字符, 所有这些转义序列都可以出现在加引号的字符字面量或字符串中. 例如 '\u2212' 或 "hello\n"
+         * 5 还可以出现在加引号的字符常量或字符串之外(而其它转义序列不可以)
+         *      例如 public static void main(String\u005B\u005D args)  --> \u005B\u005D 分别是[]的编码
+         * 6 Unicode转义序列会在解析代码之前得到处理. 例如 "\u0022+\u0022" , 在解析之前\u0022会转换为 双引号",
+         *   这样就会得到""+""的一个表达式 , 想加的结果就是一个空串 .
+         *   同理 , 在注释中, 也会提前转义 , \u00A0会替换为一个换行符 , 在单行注释中会导致语法错误.
+         特殊转移序列
+         | 转义序列 |  名称    |  Unicode值   |
+         | ----    |  ----    |  ----       |
+         | \b      |  退格    |  \u0008      |
+         | \t      |  制表    |  \u0009      |
+         | \n      |  换行    |  \u000a      |
+         | \r      |  回车    |  \u000d      |
+         | \"      |  双引号  |  \u0022      |
+         | \'      |  单引号  |  \u0027      |
+         | \\      |  反斜杠  |  \u005c      |
          */
 
+        //char 得取值范围\u0000 - \uffff
+        System.out.println("char取值范围 起点 :  0x0000 = " + 0x0000 + "=" + '\u0000');
+        System.out.println("char取值范围 终点 :  0xffff = " + 0xffff + "=" + '\uffff');
 
+        System.out.print("测试换行转义符号 : \n");
+
+        System.out.println("打印两个双引号 : " + "\"+\"");
+        
+        System.out.println("char在解析前转义为双引号 , 导致式子变为了两个空串想加 : " + "\u0022+\u0022");
+
+        System.out.println("数字强转为char : " + (char) 90);
+
+        System.out.println("打印char字符 : " + 'Z');
+
+        System.out.println("char强转为int : " + (int) 'Z');
+
+        System.out.println("取得字符串中某一个char 对应的数值 : " + "Z".getBytes()[0]);
+
+        System.out.println("==============char demo is finished==================");
 
     }
 }

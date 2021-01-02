@@ -1,7 +1,7 @@
 package com.core.java.v1ch03;
 
 
-public class CharTest {
+public class Note02CharTest {
 
     public static void main(String[] args) {
 
@@ -37,7 +37,4 @@ public class CharTest {
 
     }
 
-    public strictfp void aa(){
-
-    }
 }
