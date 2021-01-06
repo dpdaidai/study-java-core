@@ -1,37 +1,28 @@
 package com.core.java.v1ch03;
 
-public class Note02ETest {
+/**
+ * 数学函数Math
+ * @Author chenpantao
+ * @Date 1/6/21 4:13 PM
+ * @Version 1.0
+ */
+public class Note05MathApi {
 
     public static void main(String[] args) {
+
+        /**
+         *
+         * 1  Math包含了各种各样得数学函数.
+         * 2  Math类中, 为了达到最快性能, 所有方法都使用计算机浮点单元中得例程 .
+         * 3  如果得到一个完全可预测得结果比运行速度更重要得话, 那么应该使用StrictMath类.
+         *
+         */
 
         //科学计数法 1.0 * 10^-2
         System.out.println("科学计数法 1e-2 = " + (1e-2));
 
         //1.0 * 10^2
         System.out.println("科学计数法 1e2 = " + 1e2);
-
-        //0x0.3p10是在C99中引入的十六进制浮点文本的示例。 p将基数与指数分离。
-        //0x0.3位被称为有效位部分(整数与可选分数)，指数是被缩放的二的幂。
-        //该特定值计算为十六进制中的0.3，或3 * 16^(-1) = (3/16) , 再乘以2^10(1024)，其给出3 * 1024/16 = 192
-//        System.out.println(0x0.3p10);
-//
-//        // (1/16) * 2^2
-//        System.out.println(0x0.1p2);
-//
-//        // 1 * 2^(-2)
-//        System.out.println(0x1p-2);
-//
-//        // 2 * 2^(-3)
-//        System.out.println(0x2p-3);
-//
-//        // 2 * 2^(-2)
-//        System.out.println(0x1.fffffp-2f);
-//
-//        // 4.0 * 2^(-3)
-//        System.out.println(0x4.0p-3f);
-//
-//        // 0.1 * 10^2
-//        System.out.println(0.1e2);
 
         //3得2次方 , 参数和结果都是double类型
         System.out.println("Math.pow(3, 2) = 3^2 = " + Math.pow(3, 2));
@@ -86,6 +77,32 @@ public class Note02ETest {
         double radians = Math.toRadians(degrees);
 
         System.out.format("%.1f 度的正弦值为 %.4f%n", degrees, Math.sin(radians));
+        //Math.cos, Math.tan, Math.atan, Math.atan2
 
+    }
+
+    public void test(){
+        //0x0.3p10是在C99中引入的十六进制浮点文本的示例。 p将基数与指数分离。
+        //0x0.3位被称为有效位部分(整数与可选分数)，指数是被缩放的二的幂。
+        //该特定值计算为十六进制中的0.3，或3 * 16^(-1) = (3/16) , 再乘以2^10(1024)，其给出3 * 1024/16 = 192
+//        System.out.println(0x0.3p10);
+//
+//        // (1/16) * 2^2
+//        System.out.println(0x0.1p2);
+//
+//        // 1 * 2^(-2)
+//        System.out.println(0x1p-2);
+//
+//        // 2 * 2^(-3)
+//        System.out.println(0x2p-3);
+//
+//        // 2 * 2^(-2)
+//        System.out.println(0x1.fffffp-2f);
+//
+//        // 4.0 * 2^(-3)
+//        System.out.println(0x4.0p-3f);
+//
+//        // 0.1 * 10^2
+//        System.out.println(0.1e2);
     }
 }
